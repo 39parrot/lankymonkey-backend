@@ -1,3 +1,4 @@
+// TODO: hardcode?
 const fetchMenu = restaurantId => {
   const menuDB = {
     "aslkdfhdsl":
@@ -18,3 +19,6 @@ const fetchMenu = restaurantId => {
 module.exports = function(context, cb) {
   cb(null, fetchMenu(context.query.restaurant))
 }
+
+// TODO: GET
+// TODO: PUT
